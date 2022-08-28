@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .navigation{
     position: sticky;
     top:0;
@@ -59,12 +63,10 @@
 .hero-img::after{
     content:"";
     position: absolute;
-    left:10px;
+    left:-5px;
     top: -5px;
     bottom:0px;
-    right:10px;
-    width:350px;
-    height:350px;
+    right:-5px;
     transform: rotate(5deg);
     border-radius: 12px;
     background-color: rgba(255, 192, 203, 0.785);
@@ -140,26 +142,3 @@
     color:#fff
 } 
 
-@media(max-width:769px){
-  .hero-img::after{
-    width:220px;
-    height:220px;
-  }  
-}
-
-@media(max-width:426px){
-    .hero-img::after{
-        content:"";
-        position: absolute;
-        left:10px;
-        top: -5px;
-        bottom:0px;
-        right:10px;
-        width:370px;
-        height:400px;
-        transform: rotate(5deg);
-        border-radius: 12px;
-        background-color: rgba(255, 192, 203, 0.785);
-        z-index: -1;
-    }
-}
