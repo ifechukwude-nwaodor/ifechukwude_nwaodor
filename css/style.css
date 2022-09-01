@@ -41,7 +41,7 @@ body{
 .navbar .logo{
     color:rgba(255, 192, 203, 0.785);
     font-weight: 600;
-    font-size: 38px;
+    font-size: clamp(24px, 2rem, 38px);
     
 }
 /*Hero section styling*/
@@ -60,14 +60,19 @@ body{
     border-radius: 12px;
 }
 
+.hero-img img{
+    width:320px;
+    height:320px
+}
+
 .hero-img::after{
     content:"";
     position: absolute;
-    left:-5px;
+    left:0px;
     top: -5px;
-    bottom:0px;
-    right:-5px;
-    transform: rotate(5deg);
+    bottom:-2px;
+    right:0px;
+    transform: rotate(3deg);
     border-radius: 12px;
     background-color: rgba(255, 192, 203, 0.785);
     z-index: -1;
@@ -94,7 +99,33 @@ body{
     box-shadow: 0px 0px 10px rgba(153, 150, 203, 0.752);
 }
 
- i{
+/*.skill .card-details{
+    display:none;
+}
+
+.skill .card-details p{
+    color: #fff;
+}
+
+.skill .card:hover .card-details{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right:0;
+    left:0;
+    display:block;
+}
+
+.skill .card:hover .card-details::after{
+    position: absolute;
+    top:0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background-color: rgba(0, 0, 0, 0.752);
+}*/
+
+i{
     font-size: 20px;
     color:#fff
 }
